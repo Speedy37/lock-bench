@@ -122,7 +122,7 @@ impl Times {
         match kind {
             TimeKind::Kernel => self.kernel_time.max(time::Duration::new(0,1)),
             TimeKind::User => self.user_time.max(time::Duration::new(0,1)),
-            TimeKind::KernelPlusUser => self.kernel_time + self.user_time,
+            TimeKind::KernelPlusUser => (self.kernel_time + self.user_time).max(time::Duration::new(0,1)),
             TimeKind::Real => self.elapsed,
         }
     }
