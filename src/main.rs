@@ -112,17 +112,27 @@ impl Times {
         let elapsed = t0.elapsed();
         let r1 = rusage::getrusage();
         Times {
-            kernel_time: r1.kernel_time - r0.kernel_time,
-            user_time: r1.user_time - r0.user_time,
+            kernel_time: if r1.kernel_time > r1.kernel_time {
+                r1.kernel_time - r0.kernel_time
+            } else {
+                time::Duration(0, 0)
+            },
+            user_time: if r1.user_time > r1.user_time {
+                r1.user_time - r0.user_time
+            } else {
+                time::Duration(0, 0)
+            },
             elapsed,
         }
     }
 
     fn get(&self, kind: TimeKind) -> time::Duration {
         match kind {
-            TimeKind::Kernel => self.kernel_time.max(time::Duration::new(0,1)),
-            TimeKind::User => self.user_time.max(time::Duration::new(0,1)),
-            TimeKind::KernelPlusUser => (self.kernel_time + self.user_time).max(time::Duration::new(0,1)),
+            TimeKind::Kernel => self.kernel_time.max(time::Duration::new(0, 1)),
+            TimeKind::User => self.user_time.max(time::Duration::new(0, 1)),
+            TimeKind::KernelPlusUser => {
+                (self.kernel_time + self.user_time).max(time::Duration::new(0, 1))
+            }
             TimeKind::Real => self.elapsed,
         }
     }
