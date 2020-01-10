@@ -30,10 +30,3 @@ jobs:
         with:
           command: run
           args: -- --bench --plotting-backend plotters cpu
-
-      - name: Deploy Results
-        uses: peaceiris/actions-gh-pages@v2.5.1
-        env:
-          ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: ./target/criterion
