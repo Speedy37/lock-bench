@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Index - Criterion.rs</title>
+    <style type="text/css">
+        body {
+            font: 14px Helvetica Neue;
+            text-rendering: optimizelegibility;
+        }
+
+        .body {
+            width: 960px;
+            margin: auto;
+        }
+
+        a:link {
+            color: #1F78B4;
+            text-decoration: none;
+        }
+
+        h2 {
+            font-size: 36px;
+            font-weight: 300;
+        }
+
+        h3 {
+            font-size: 24px;
+            font-weight: 300;
+        }
+
+        #footer {
+            height: 40px;
+            background: #888;
+            color: white;
+            font-size: larger;
+            font-weight: 300;
+        }
+
+        #footer a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        #footer p {
+            text-align: center
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #888;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="body">
+        <h2>Criterion.rs Benchmark Index</h2>
+        See individual benchmark pages below for more details.
+        <ul>
+            <li><a href="../cpu/report/index.html">cpu</a></li>
+            
+            <ul>
+                <li>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th><a href="../cpu/extreme contention/report/index.html">extreme contention</a></th>
+                            <th><a href="../cpu/heavy contention/report/index.html">heavy contention</a></th>
+                            <th><a href="../cpu/light contention/report/index.html">light contention</a></th>
+                            <th><a href="../cpu/no contention/report/index.html">no contention</a></th>
+                        </tr>
+                        <tr>
+                            <th><a href="../cpu/AmdSpinlock/report/index.html">AmdSpinlock</a></th>
+                            <td><a href="../cpu/extreme contention/AmdSpinlock/report/index.html">cpu/extreme contention/AmdSpinlock</a></td>
+                            <td><a href="../cpu/heavy contention/AmdSpinlock/report/index.html">cpu/heavy contention/AmdSpinlock</a></td>
+                            <td><a href="../cpu/light contention/AmdSpinlock/report/index.html">cpu/light contention/AmdSpinlock</a></td>
+                            <td><a href="../cpu/no contention/AmdSpinlock/report/index.html">cpu/no contention/AmdSpinlock</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../cpu/parking_lot__Mutex/report/index.html">parking_lot::Mutex</a></th>
+                            <td><a href="../cpu/extreme contention/parking_lot__Mutex/report/index.html">cpu/extreme contention/parking_lot::Mutex</a></td>
+                            <td><a href="../cpu/heavy contention/parking_lot__Mutex/report/index.html">cpu/heavy contention/parking_lot::Mutex</a></td>
+                            <td><a href="../cpu/light contention/parking_lot__Mutex/report/index.html">cpu/light contention/parking_lot::Mutex</a></td>
+                            <td><a href="../cpu/no contention/parking_lot__Mutex/report/index.html">cpu/no contention/parking_lot::Mutex</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../cpu/spin__Mutex/report/index.html">spin::Mutex</a></th>
+                            <td><a href="../cpu/extreme contention/spin__Mutex/report/index.html">cpu/extreme contention/spin::Mutex</a></td>
+                            <td><a href="../cpu/heavy contention/spin__Mutex/report/index.html">cpu/heavy contention/spin::Mutex</a></td>
+                            <td><a href="../cpu/light contention/spin__Mutex/report/index.html">cpu/light contention/spin::Mutex</a></td>
+                            <td><a href="../cpu/no contention/spin__Mutex/report/index.html">cpu/no contention/spin::Mutex</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../cpu/std__sync__Mutex/report/index.html">std::sync::Mutex</a></th>
+                            <td><a href="../cpu/extreme contention/std__sync__Mutex/report/index.html">cpu/extreme contention/std::sync::Mutex</a></td>
+                            <td><a href="../cpu/heavy contention/std__sync__Mutex/report/index.html">cpu/heavy contention/std::sync::Mutex</a></td>
+                            <td><a href="../cpu/light contention/std__sync__Mutex/report/index.html">cpu/light contention/std::sync::Mutex</a></td>
+                            <td><a href="../cpu/no contention/std__sync__Mutex/report/index.html">cpu/no contention/std::sync::Mutex</a></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+            <li><a href="../duration/report/index.html">duration</a></li>
+            
+            <ul>
+                <li>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th><a href="../duration/extreme contention/report/index.html">extreme contention</a></th>
+                            <th><a href="../duration/heavy contention/report/index.html">heavy contention</a></th>
+                            <th><a href="../duration/light contention/report/index.html">light contention</a></th>
+                            <th><a href="../duration/no contention/report/index.html">no contention</a></th>
+                        </tr>
+                        <tr>
+                            <th><a href="../duration/AmdSpinlock/report/index.html">AmdSpinlock</a></th>
+                            <td><a href="../duration/extreme contention/AmdSpinlock/report/index.html">duration/extreme contention/AmdSpinlock</a></td>
+                            <td><a href="../duration/heavy contention/AmdSpinlock/report/index.html">duration/heavy contention/AmdSpinlock</a></td>
+                            <td><a href="../duration/light contention/AmdSpinlock/report/index.html">duration/light contention/AmdSpinlock</a></td>
+                            <td><a href="../duration/no contention/AmdSpinlock/report/index.html">duration/no contention/AmdSpinlock</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../duration/parking_lot__Mutex/report/index.html">parking_lot::Mutex</a></th>
+                            <td><a href="../duration/extreme contention/parking_lot__Mutex/report/index.html">duration/extreme contention/parking_lot::Mutex</a></td>
+                            <td><a href="../duration/heavy contention/parking_lot__Mutex/report/index.html">duration/heavy contention/parking_lot::Mutex</a></td>
+                            <td><a href="../duration/light contention/parking_lot__Mutex/report/index.html">duration/light contention/parking_lot::Mutex</a></td>
+                            <td><a href="../duration/no contention/parking_lot__Mutex/report/index.html">duration/no contention/parking_lot::Mutex</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../duration/spin__Mutex/report/index.html">spin::Mutex</a></th>
+                            <td><a href="../duration/extreme contention/spin__Mutex/report/index.html">duration/extreme contention/spin::Mutex</a></td>
+                            <td><a href="../duration/heavy contention/spin__Mutex/report/index.html">duration/heavy contention/spin::Mutex</a></td>
+                            <td><a href="../duration/light contention/spin__Mutex/report/index.html">duration/light contention/spin::Mutex</a></td>
+                            <td><a href="../duration/no contention/spin__Mutex/report/index.html">duration/no contention/spin::Mutex</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../duration/std__sync__Mutex/report/index.html">std::sync::Mutex</a></th>
+                            <td><a href="../duration/extreme contention/std__sync__Mutex/report/index.html">duration/extreme contention/std::sync::Mutex</a></td>
+                            <td><a href="../duration/heavy contention/std__sync__Mutex/report/index.html">duration/heavy contention/std::sync::Mutex</a></td>
+                            <td><a href="../duration/light contention/std__sync__Mutex/report/index.html">duration/light contention/std::sync::Mutex</a></td>
+                            <td><a href="../duration/no contention/std__sync__Mutex/report/index.html">duration/no contention/std::sync::Mutex</a></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+            <li><a href="../kernel/report/index.html">kernel</a></li>
+            
+            <ul>
+                <li>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th><a href="../kernel/extreme contention/report/index.html">extreme contention</a></th>
+                            <th><a href="../kernel/heavy contention/report/index.html">heavy contention</a></th>
+                            <th><a href="../kernel/light contention/report/index.html">light contention</a></th>
+                            <th><a href="../kernel/no contention/report/index.html">no contention</a></th>
+                        </tr>
+                        <tr>
+                            <th><a href="../kernel/AmdSpinlock/report/index.html">AmdSpinlock</a></th>
+                            <td><a href="../kernel/extreme contention/AmdSpinlock/report/index.html">kernel/extreme contention/AmdSpinlock</a></td>
+                            <td><a href="../kernel/heavy contention/AmdSpinlock/report/index.html">kernel/heavy contention/AmdSpinlock</a></td>
+                            <td><a href="../kernel/light contention/AmdSpinlock/report/index.html">kernel/light contention/AmdSpinlock</a></td>
+                            <td><a href="../kernel/no contention/AmdSpinlock/report/index.html">kernel/no contention/AmdSpinlock</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../kernel/parking_lot__Mutex/report/index.html">parking_lot::Mutex</a></th>
+                            <td><a href="../kernel/extreme contention/parking_lot__Mutex/report/index.html">kernel/extreme contention/parking_lot::Mutex</a></td>
+                            <td><a href="../kernel/heavy contention/parking_lot__Mutex/report/index.html">kernel/heavy contention/parking_lot::Mutex</a></td>
+                            <td><a href="../kernel/light contention/parking_lot__Mutex/report/index.html">kernel/light contention/parking_lot::Mutex</a></td>
+                            <td><a href="../kernel/no contention/parking_lot__Mutex/report/index.html">kernel/no contention/parking_lot::Mutex</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../kernel/spin__Mutex/report/index.html">spin::Mutex</a></th>
+                            <td><a href="../kernel/extreme contention/spin__Mutex/report/index.html">kernel/extreme contention/spin::Mutex</a></td>
+                            <td><a href="../kernel/heavy contention/spin__Mutex/report/index.html">kernel/heavy contention/spin::Mutex</a></td>
+                            <td><a href="../kernel/light contention/spin__Mutex/report/index.html">kernel/light contention/spin::Mutex</a></td>
+                            <td><a href="../kernel/no contention/spin__Mutex/report/index.html">kernel/no contention/spin::Mutex</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../kernel/std__sync__Mutex/report/index.html">std::sync::Mutex</a></th>
+                            <td><a href="../kernel/extreme contention/std__sync__Mutex/report/index.html">kernel/extreme contention/std::sync::Mutex</a></td>
+                            <td><a href="../kernel/heavy contention/std__sync__Mutex/report/index.html">kernel/heavy contention/std::sync::Mutex</a></td>
+                            <td><a href="../kernel/light contention/std__sync__Mutex/report/index.html">kernel/light contention/std::sync::Mutex</a></td>
+                            <td><a href="../kernel/no contention/std__sync__Mutex/report/index.html">kernel/no contention/std::sync::Mutex</a></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+            <li><a href="../user/report/index.html">user</a></li>
+            
+            <ul>
+                <li>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th><a href="../user/extreme contention/report/index.html">extreme contention</a></th>
+                            <th><a href="../user/heavy contention/report/index.html">heavy contention</a></th>
+                            <th><a href="../user/light contention/report/index.html">light contention</a></th>
+                            <th><a href="../user/no contention/report/index.html">no contention</a></th>
+                        </tr>
+                        <tr>
+                            <th><a href="../user/AmdSpinlock/report/index.html">AmdSpinlock</a></th>
+                            <td><a href="../user/extreme contention/AmdSpinlock/report/index.html">user/extreme contention/AmdSpinlock</a></td>
+                            <td><a href="../user/heavy contention/AmdSpinlock/report/index.html">user/heavy contention/AmdSpinlock</a></td>
+                            <td><a href="../user/light contention/AmdSpinlock/report/index.html">user/light contention/AmdSpinlock</a></td>
+                            <td><a href="../user/no contention/AmdSpinlock/report/index.html">user/no contention/AmdSpinlock</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../user/parking_lot__Mutex/report/index.html">parking_lot::Mutex</a></th>
+                            <td><a href="../user/extreme contention/parking_lot__Mutex/report/index.html">user/extreme contention/parking_lot::Mutex</a></td>
+                            <td><a href="../user/heavy contention/parking_lot__Mutex/report/index.html">user/heavy contention/parking_lot::Mutex</a></td>
+                            <td><a href="../user/light contention/parking_lot__Mutex/report/index.html">user/light contention/parking_lot::Mutex</a></td>
+                            <td><a href="../user/no contention/parking_lot__Mutex/report/index.html">user/no contention/parking_lot::Mutex</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../user/spin__Mutex/report/index.html">spin::Mutex</a></th>
+                            <td><a href="../user/extreme contention/spin__Mutex/report/index.html">user/extreme contention/spin::Mutex</a></td>
+                            <td><a href="../user/heavy contention/spin__Mutex/report/index.html">user/heavy contention/spin::Mutex</a></td>
+                            <td><a href="../user/light contention/spin__Mutex/report/index.html">user/light contention/spin::Mutex</a></td>
+                            <td><a href="../user/no contention/spin__Mutex/report/index.html">user/no contention/spin::Mutex</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../user/std__sync__Mutex/report/index.html">std::sync::Mutex</a></th>
+                            <td><a href="../user/extreme contention/std__sync__Mutex/report/index.html">user/extreme contention/std::sync::Mutex</a></td>
+                            <td><a href="../user/heavy contention/std__sync__Mutex/report/index.html">user/heavy contention/std::sync::Mutex</a></td>
+                            <td><a href="../user/light contention/std__sync__Mutex/report/index.html">user/light contention/std::sync::Mutex</a></td>
+                            <td><a href="../user/no contention/std__sync__Mutex/report/index.html">user/no contention/std::sync::Mutex</a></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+        </ul>
+    </div>
+    <div id="footer">
+        <p>This report was generated by
+            <a href="https://github.com/bheisler/criterion.rs">Criterion.rs</a>, a statistics-driven benchmarking
+            library in Rust.</p>
+    </div>
+</body>
+</html>
