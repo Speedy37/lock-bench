@@ -1,0 +1,1 @@
+{"group_id":"cpu","function_id":"extreme contention","value_str":"AmdSpinlock","throughput":null,"full_id":"cpu/extreme contention/AmdSpinlock","directory_name":"cpu/extreme contention/amdspinlock","title":"cpu/extreme contention/AmdSpinlock"}

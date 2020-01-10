@@ -1,0 +1,1 @@
+{"group_id":"kernel","function_id":"heavy contention","value_str":"AmdSpinlock","throughput":null,"full_id":"kernel/heavy contention/AmdSpinlock","directory_name":"kernel/heavy contention/amdspinlock","title":"kernel/heavy contention/AmdSpinlock"}
