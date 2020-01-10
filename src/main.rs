@@ -115,12 +115,12 @@ impl Times {
             kernel_time: if r1.kernel_time > r1.kernel_time {
                 r1.kernel_time - r0.kernel_time
             } else {
-                time::Duration(0, 0)
+                time::Duration::new(0, 0)
             },
             user_time: if r1.user_time > r1.user_time {
                 r1.user_time - r0.user_time
             } else {
-                time::Duration(0, 0)
+                time::Duration::new(0, 0)
             },
             elapsed,
         }
