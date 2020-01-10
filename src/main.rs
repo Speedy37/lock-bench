@@ -120,8 +120,8 @@ impl Times {
 
     fn get(&self, kind: TimeKind) -> time::Duration {
         match kind {
-            TimeKind::Kernel => self.kernel_time,
-            TimeKind::User => self.user_time,
+            TimeKind::Kernel => self.kernel_time.max(time::Duration::new(0,1)),
+            TimeKind::User => self.user_time.max(time::Duration::new(0,1)),
             TimeKind::KernelPlusUser => self.kernel_time + self.user_time,
             TimeKind::Real => self.elapsed,
         }
@@ -174,6 +174,7 @@ fn run_bench<M: Mutex>(options: &Options, n: u64, kind: TimeKind) -> time::Durat
     elapsed.get(kind)
 }
 
+#[derive(Debug)]
 struct RUsage {
     kernel_time: time::Duration,
     user_time: time::Duration,
@@ -264,7 +265,7 @@ mod rusage {
         }
         RUsage {
             kernel_time: to_duration(kernel_time),
-            user_time: to_duration(kernel_time),
+            user_time: to_duration(user_time),
         }
     }
 }

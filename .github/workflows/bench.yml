@@ -25,7 +25,7 @@ jobs:
           toolchain: stable
           profile: minimal
 
-      - name: Build Documentation
+      - name: Bench
         uses: actions-rs/cargo@v1
         with:
           command: run
