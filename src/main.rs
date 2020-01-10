@@ -112,12 +112,12 @@ impl Times {
         let elapsed = t0.elapsed();
         let r1 = rusage::getrusage();
         Times {
-            kernel_time: if r1.kernel_time > r1.kernel_time {
+            kernel_time: if r1.kernel_time > r0.kernel_time {
                 r1.kernel_time - r0.kernel_time
             } else {
                 time::Duration::new(0, 0)
             },
-            user_time: if r1.user_time > r1.user_time {
+            user_time: if r1.user_time > r0.user_time {
                 r1.user_time - r0.user_time
             } else {
                 time::Duration::new(0, 0)
